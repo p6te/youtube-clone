@@ -1,0 +1,14 @@
+.main-page {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 16px;
+  min-height: 100vh;
+  margin: 24px 92px 0 92px;
+  background-color: #191919;
+
+  .video {
+    height: 250px;
+    background-color: white;
+
+  }
+}
