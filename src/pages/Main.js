@@ -16,33 +16,23 @@ function Main() {
   }, []);
   console.log(videos);
 
-  function RenderVideos() {}
-
   return (
     <div className="main-page">
-      <div className="video">
-        <img className="title-image"
-          src="https://static.antyweb.pl/wp-content/uploads/2021/07/23110507/@youtube_yt_2.jpg"
-          alt="obraz"
-        />
-      </div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
-      <div className="video"></div>
+      {videos.map((clip) => {
+        return (
+          <div className="video" key={clip.id}>
+            <img className="video__image" src={clip.picture} alt="obraz" />
+            <div className="video__label">
+              <div className="video__logo"></div>
+              <div className="video__description">
+                <h3>title</h3>
+                <span>autor</span>
+                <span>12 tyś wyś. 2 lata temu</span>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

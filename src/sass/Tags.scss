@@ -1,16 +1,15 @@
 .tagsList {
-  position: sticky;
-  top: 56px;
-  flex-grow: 1;
   background-color: #202020;
   height: 56px;
   border-top: 1px solid rgba(128, 128, 128, 0.3);
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  // width: calc(100vw - 240px);
 
   ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
     margin: 0 30px;

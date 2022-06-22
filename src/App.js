@@ -7,9 +7,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Sidebar />
       <div className="page">
-        <Sidebar />
-        <div>
+        <div className="back"></div>
+        <div clasName="right-site">
           <Tags />
           <Main />
         </div>
