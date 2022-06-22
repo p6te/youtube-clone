@@ -1,0 +1,32 @@
+.sidebar {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  width: 240px;
+  background-color: #202020;
+
+  &__section {
+    width: 100%;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    &:hover {
+      background-color: #505050;
+      cursor: pointer;
+    }
+    span {
+      color: white;
+    }
+  }
+}
+.icon {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+.main {
+}
